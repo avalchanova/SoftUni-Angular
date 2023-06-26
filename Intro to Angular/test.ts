@@ -1,4 +1,9 @@
 let isEven:boolean = false
+let num: number = 5
+let str: string = ""
+
+// we set the type and typescript will catch if there is a missmatch between
+// the type it is supposed to be and the type that it is
 
 type User = {
     name: string;
@@ -41,3 +46,5 @@ anotherUserList.forEach(({firstName, id}) => {
 anotherUserList.forEach((user)=> {
     // user.firstName
 })
+
+// tsc nameofthefile.ts --> transpiles the code into JavaScript
